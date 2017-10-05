@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block body %}
+	<h1>Is your postgres database integrated?</h1>
+
+	{% if things %}
+		<div>Yes! Your database is integrated. Here are the Things you've added:</div>
+	{% else %}
+		<div>No, we could not query any values from your database.</div>
+	{% endif %}
+
+	<ul>
+	{% for thing in things %}
+		<li>Thing {{ thing.id }}</li>
+	{% endfor %}
+	</ul>
+
+	<a href="/">Go back home</a>
+{% endblock %}
