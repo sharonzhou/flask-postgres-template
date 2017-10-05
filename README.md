@@ -1,4 +1,4 @@
-# Flask-postgres
+# Flask-Postgres Template
 The basic template of a flask application with postgres database integration.
 
 _Frequently desired for a Heroku deployment._
