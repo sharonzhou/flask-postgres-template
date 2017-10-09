@@ -63,7 +63,7 @@ $ export DATABASE_URL="postgresql://my_cool_username@localhost/my_practical_db_n
 $ python run.py
 ```
 
-7.  Open http://127.0.0.1:5000 in your browser.
+7.  Open http://0.0.0.0:5000 (or what you specified and the terminal outputs for you) in your browser.
 
 8.  Check if your postgres database is integrated correctly by clicking: **Add a "Thing" to your database**.
 

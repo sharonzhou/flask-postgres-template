@@ -13,6 +13,3 @@ def add_to_db():
     db.session.commit()
     things = Thing.query.all()
     return render_template("db.html", things=things)
-
-if __name__ == "__main__":
-    app.run(debug=True)
