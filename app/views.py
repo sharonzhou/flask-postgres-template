@@ -1,6 +1,6 @@
-from app import app, db
 from flask import render_template
-from models import *
+from app import app, db
+from app.models import *
 
 @app.route("/")
 def index():
@@ -15,4 +15,4 @@ def add_to_db():
     return render_template("db.html", things=things)
 
 if __name__ == "__main__":
-    app.run(debug=True, host="127.0.0.1", port="5000")
+    app.run(debug=True)
