@@ -49,19 +49,15 @@ my_practical_db_name=# \q
 
 ```
 
-5. Link the postgres database to the flask app. 
+5. Link the postgres database to the Flask app. 
 	
-	In [app/__init__.py](https://github.com/sharonzhou/flask-postgres/blob/master/app/__init__.py), find this line: `app.config["SQLALCHEMY_DATABASE_URI"] = ""`.
-
-	In the empty string, add the following information about your database according to the format below. Save and close the file.
-
-	_This includes the database type (postgres), your username (my_cool_username), the host (localhost, aka. 127.0.0.1), and your database name (my_practical_db_name)._
+	_The link to your database includes the database type (postgres), your username (my_cool_username), the host (localhost, aka. 127.0.0.1), and your database name (my_practical_db_name)._
 
 ```
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://my_cool_username@localhost/my_practical_db_name"
+$ export DATABASE_URL="postgresql://my_cool_username@localhost/my_practical_db_name"
 ```
 
-6.  Back in the terminal, start the server.
+6.  Start the server.
 
 ```
 $ python run.py
